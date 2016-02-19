@@ -1,0 +1,34 @@
+{
+  "name": "angular-validator-equals",
+  "version": "0.1.0",
+  "description": "A simple validator that checks if the model is equals to another model",
+  "main": "dist/angular-validator-equals.min.js",
+  "authors": [
+    "Carlos André Ferrari"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/caferrari/angular-validator-equals.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "form-validation",
+    "material",
+    "design",
+    "angular"
+  ],
+  "homepage": "https://github.com/caferrari/angular-validator-equals",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test",
+    "tests",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "angular": ">1.4.0"
+  }
+}
