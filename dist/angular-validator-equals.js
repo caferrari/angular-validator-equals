@@ -19,8 +19,9 @@
 
         scope.$watch('parent', ngModel.$validate);
         scope.$watch(function () {
-          return ngModel.$modelValue;
+          return (ngModel || {}).$modelValue;
         }, function () {
+          if (!ngModel) return;
           ngModel.$setTouched();
           ngModel.$validate();
         });
