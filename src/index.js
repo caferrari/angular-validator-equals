@@ -2,7 +2,7 @@
 
   'use strict';
   angular.module('validatorEquals', [])
-  
+
   .directive('equals', () => {
     return {
       restrict: 'A',
@@ -17,12 +17,13 @@
         };
 
         scope.$watch('parent', ngModel.$validate);
-        scope.$watch(() => ngModel.$modelValue, () => {
+        scope.$watch(() => (ngModel || {}).$modelValue, () => {
+          if (!ngModel) return;
           ngModel.$setTouched();
           ngModel.$validate();
         });
       }
     };
-  });  
-  
+  });
+
 })(angular);
